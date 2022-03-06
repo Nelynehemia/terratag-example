@@ -1,10 +1,10 @@
 # aws.tf
 provider "aws" {
-  version = "~> 2.0"
+  profile = "default"
   region  = "us-east-1"
 }
 
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-tf-test-bucket"
   acl    = "private"
 
