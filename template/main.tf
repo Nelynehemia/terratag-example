@@ -1,6 +1,6 @@
 # Specify the provider and access details
 provider "aws" {
-  region = var.aws_region
+  regionxx = var.aws_region
   access_key = var.access_key
   secret_key = var.secret_key
 }
@@ -11,7 +11,6 @@ resource "aws_vpc" "example_vpc" {
   enable_dns_hostnames = true
 }
 
-nely nehemia
 resource "aws_internet_gateway" "example_gateway" {
   vpc_id = aws_vpc.example_vpc.id
 }
