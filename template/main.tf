@@ -11,6 +11,7 @@ resource "aws_vpc" "example_vpc" {
   enable_dns_hostnames = true
 }
 
+nely nehemia
 resource "aws_internet_gateway" "example_gateway" {
   vpc_id = aws_vpc.example_vpc.id
 }
